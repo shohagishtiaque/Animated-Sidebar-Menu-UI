@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.side-nav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+.side-nav:hover{
+    width: 300px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.side-nav:hover .user{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+.user div{
+    display: none;
+}
+.side-nav:hover .user div{
+    display: block;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.user-img{
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+.side-nav:hover .user-img{
+    margin: 0;
+}
+
+.star-img{
+    width: 20px;
+    display: none;
+}
+.side-nav:hover .star-img{
+    display: block;
+}
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.side-nav:hover ul li{
+    justify-content: flex-start;
+}
+ul li img{
+    width: 30px;
+    margin-right: 0px;
+}
+.side-nav:hover ul li img{
+    margin-right: 10px;
+}
+ul li p{
+    white-space: nowrap;
+    display: none;
+}
+.side-nav:hover ul li p{
+    display: block;
+}
